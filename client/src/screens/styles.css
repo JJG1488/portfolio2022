@@ -1,0 +1,57 @@
+/* Try to get image to display from here in the CSS instead of the actual file Home.js */
+#imageDataCertificate {
+    width: 100%;
+}
+
+h1 { 
+    text-align: center;
+    color: black;
+}
+
+#data-text {
+    text-align: left;
+    overflow: auto;
+    
+}
+
+h6 {
+    text-align: center;
+}
+
+#big-btn {
+    border: solid blue;
+    background-color: white;
+    color: blue;
+    border-radius: 40px;
+    background: transparent;
+    
+}
+
+#big-btn:hover {
+    border: solid blue;
+    background-color: blue;
+    color: white;
+    
+}
+
+#social-link-data {
+    color: black;
+}
+
+.contact-container {
+    /* border: solid red 10px; */
+    display: grid;
+
+}
+
+.contact-info {
+    /* border: solid green 3px; */
+    display: inline-block;
+    margin: 10% auto;
+    line-height: 3rem;
+}
+
+.website-link{
+    color: red;
+
+}
