@@ -1,6 +1,5 @@
 {
   "name": "portfolio2022",
-  "proxy": "http://localhost:5000",
   "version": "1.0.0",
   "description": "portfolio2022",
   "main": "server.js",
