@@ -15,7 +15,7 @@ export const Header = () => {
                     <Nav className="ms-auto">
                         <LinkContainer to="/main"><Nav.Link><i className="fas fa-user"></i>About</Nav.Link></LinkContainer>
                         <LinkContainer to="/contact"><Nav.Link><i className="fas fa-smile"></i>Contact</Nav.Link></LinkContainer>
-                        <LinkContainer to="/portfolio2022"><Nav.Link><i className="fas fa-star"></i>Projects</Nav.Link></LinkContainer>
+                        <LinkContainer to="/portfolio"><Nav.Link><i className="fas fa-star"></i>Projects</Nav.Link></LinkContainer>
 
                     </Nav>
                     <a href="https://1drv.ms/w/s!AoCauJZ3EHFdgwMB4s6gnDG-WQOe" rel="noreferrer" target="_blank" style={{ color: 'white' }}> <span>Open Resume in a PDF File </span>  <i className="fa fa-download" aria-hidden="true"></i></a>
