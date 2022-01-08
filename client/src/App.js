@@ -20,10 +20,10 @@ const App = () => {
           <Container>
             <Routes>
               <Route exact path="/" element={<HomeScreen />} />
-              <Route path="/portfolio" element={<HomeScreen />} />
-              <Route path="/project/:id" element={<ProjectScreen />} />
-              <Route path="/main" element={<MainScreen />} />
-              <Route path="/contact" element={<ContactScreen />} />
+              <Route path="/01portfolio2022" element={<HomeScreen />} />
+              <Route path="/01project2022/:id" element={<ProjectScreen />} />
+              <Route path="/01main2022" element={<MainScreen />} />
+              <Route path="/01contact2022" element={<ContactScreen />} />
             </Routes>
           </Container>
         </main>
