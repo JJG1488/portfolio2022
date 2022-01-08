@@ -1,11 +1,11 @@
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import colors from 'colors';
-import users from './data/users.js';
+// import users from './data/users.js';
 import projects from './data/projects.js';
-import User from './models/userModel.js';
+// import User from './models/userModel.js';
 import Project from './models/projectModel.js';
-import Order from './models/orderModel.js';
+// import Order from './models/orderModel.js';
 import connectDB from './config/db.js';
 
 dotenv.config()
@@ -15,15 +15,16 @@ connectDB()
 
 const importData = async () => {
     try {
-        await Order.deleteMany();
+        // await Order.deleteMany();
         await Project.deleteMany();
-        await User.deleteMany();
+        // await User.deleteMany();
 
-        const createdUsers = await User.insertMany(users);
-        const adminUser = createdUsers[0]._id;
+        // const createdUsers = await User.insertMany(users);
+        // const adminUser = createdUsers[0]._id;
 
         const sampleProjects = projects.map(project => {
-            return { ...project, user: adminUser }
+            // return { ...project, user: adminUser }
+            return { ...project }
         })
 
         await Project.insertMany(sampleProjects);
@@ -39,9 +40,9 @@ const importData = async () => {
 
 const destroyData = async () => {
     try {
-        await Order.deleteMany();
+        // await Order.deleteMany();
         await Project.deleteMany();
-        await User.deleteMany();
+        // await User.deleteMany();
 
         console.log('Data Destroyed!'.red.inverse);
         process.exit();
