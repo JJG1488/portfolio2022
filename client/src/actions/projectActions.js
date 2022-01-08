@@ -6,7 +6,10 @@ export const listProjects = () => async (dispatch) => {
     try {
         dispatch({ type: PROJECT_LIST_REQUEST })
 
-        const { data } = await axios.get('/api/projects');
+        const { data, headers } = await axios.get('/api/projects')
+        console.log(data, headers)
+        headers['permissions-policy'] = null
+        console.log(headers['permissions-policy'])
 
         dispatch({ type: PROJECT_LIST_SUCCESS, payload: data })
     } catch (error) {
