@@ -6,7 +6,7 @@ import { Card } from 'react-bootstrap';
 export const Project = ({ project }) => {
     return (
         <Card className="my-3 p-3 rounded">
-            <Link to={`/project/${project._id}`}>
+            <Link to={`/01project2022/${project._id}`}>
                 <Card.Img src={project.image} variant='top' />
             </Link>
 
@@ -15,7 +15,7 @@ export const Project = ({ project }) => {
                 <Card.Text as='h3'>
                     {project.name}
                 </Card.Text>
-                <Link to={`/project/${project._id}`}>
+                <Link to={`/01project2022/${project._id}`}>
                     <Card.Title as='div'>
                         <strong>{project.name}</strong> (link)
                     </Card.Title>
